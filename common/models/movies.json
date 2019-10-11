@@ -1,0 +1,43 @@
+{
+  "name": "Movies",
+  "plural": "Movies",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "movieName": {
+      "type": "string",
+      "required": true
+    },
+    "movieUrl": {
+      "type": "string",
+      "required": true,
+      "default": "movieCategory"
+    },
+    "publishedDate": {
+      "type": "date"
+    },
+    "thumbnail": {
+      "type": "string",
+      "required": true
+    },
+    "movieCategory": {
+      "type": "string",
+      "required": true
+    },
+    "duration": {
+      "type": "number",
+      "required": true
+    },
+    "fullImage": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
